@@ -10,9 +10,6 @@
 		27BDAA9623C2F963002177B6 /* EasyTipOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27BDAA9323C2F963002177B6 /* EasyTipOption.swift */; };
 		27BDAA9723C2F963002177B6 /* EasyTipContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27BDAA9423C2F963002177B6 /* EasyTipContentView.swift */; };
 		27BDAA9823C2F963002177B6 /* EasyTip.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27BDAA9523C2F963002177B6 /* EasyTip.swift */; };
-		27BDAA9B23C318B6002177B6 /* EasyTip.swift in Headers */ = {isa = PBXBuildFile; fileRef = 27BDAA9523C2F963002177B6 /* EasyTip.swift */; settings = {ATTRIBUTES = (Public, ); }; };
-		27BDAA9C23C318B6002177B6 /* EasyTipContentView.swift in Headers */ = {isa = PBXBuildFile; fileRef = 27BDAA9423C2F963002177B6 /* EasyTipContentView.swift */; settings = {ATTRIBUTES = (Public, ); }; };
-		27BDAA9D23C318B6002177B6 /* EasyTipOption.swift in Headers */ = {isa = PBXBuildFile; fileRef = 27BDAA9323C2F963002177B6 /* EasyTipOption.swift */; settings = {ATTRIBUTES = (Public, ); }; };
 		378A3FDDFA6D099827606A01EC468B0D /* Pods-EasyTip_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 503E280662D7DB554DB20F7ABBE2CB22 /* Pods-EasyTip_Example-dummy.m */; };
 		4FC1FA858FAFF98C6943871CC9FFB050 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
 		586AF265B3EFEB0495C8B2F959193943 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
@@ -238,9 +235,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				A0524ABB977D75A0091179ED9CEE30DD /* EasyTip-umbrella.h in Headers */,
-				27BDAA9B23C318B6002177B6 /* EasyTip.swift in Headers */,
-				27BDAA9C23C318B6002177B6 /* EasyTipContentView.swift in Headers */,
-				27BDAA9D23C318B6002177B6 /* EasyTipOption.swift in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -440,7 +434,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/EasyTip/EasyTip-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/EasyTip/EasyTip-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/EasyTip/EasyTip.modulemap";
@@ -448,6 +442,7 @@
 				PRODUCT_NAME = EasyTip;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -473,7 +468,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "Target Support Files/Pods-EasyTip_Example/Pods-EasyTip_Example-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-EasyTip_Example/Pods-EasyTip_Example.modulemap";
@@ -484,6 +479,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -507,7 +503,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "Target Support Files/Pods-EasyTip_Example/Pods-EasyTip_Example-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-EasyTip_Example/Pods-EasyTip_Example.modulemap";
@@ -518,6 +514,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -572,7 +569,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -599,7 +596,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "Target Support Files/Pods-EasyTip_Tests/Pods-EasyTip_Tests-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-EasyTip_Tests/Pods-EasyTip_Tests.modulemap";
@@ -610,6 +607,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -668,7 +666,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -698,7 +696,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/EasyTip/EasyTip-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/EasyTip/EasyTip-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/EasyTip/EasyTip.modulemap";
@@ -706,6 +704,7 @@
 				PRODUCT_NAME = EasyTip;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
@@ -731,7 +730,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "Target Support Files/Pods-EasyTip_Tests/Pods-EasyTip_Tests-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-EasyTip_Tests/Pods-EasyTip_Tests.modulemap";
@@ -742,6 +741,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";

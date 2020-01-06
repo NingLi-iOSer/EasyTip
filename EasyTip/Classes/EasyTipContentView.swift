@@ -93,9 +93,14 @@ public class EasyTipContentView: UIView {
 
 extension EasyTipContentView {
     private func show() {
-        UIView.animate(withDuration: 0.25) {
-            self.frame.origin.y = 0
-        }
+        let anim = CASpringAnimation(keyPath: "position.y")
+        anim.toValue = UIApplication.shared.statusBarFrame.height
+        anim.damping = 15
+        anim.mass = 1
+        anim.initialVelocity = 10
+        anim.duration = anim.settlingDuration
+        anim.isRemovedOnCompletion = false
+        layer.add(anim, forKey: nil)
     }
     
     public func dismiss() {
