@@ -26,7 +26,7 @@ public struct EasyTipOption {
                                          shadow: .default,
                                          textFont: UIFont.systemFont(ofSize: 15),
                                          textColor: UIColor.black,
-                                         textAligment: .center)
+                                         textAligment: .left)
 }
 
 /// 阴影

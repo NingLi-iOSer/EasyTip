@@ -10,8 +10,6 @@
 		27BDAA9623C2F963002177B6 /* EasyTipOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27BDAA9323C2F963002177B6 /* EasyTipOption.swift */; };
 		27BDAA9723C2F963002177B6 /* EasyTipContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27BDAA9423C2F963002177B6 /* EasyTipContentView.swift */; };
 		27BDAA9823C2F963002177B6 /* EasyTip.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27BDAA9523C2F963002177B6 /* EasyTip.swift */; };
-		27BDAA9923C3011F002177B6 /* EasyTip.swift in Headers */ = {isa = PBXBuildFile; fileRef = 27BDAA9523C2F963002177B6 /* EasyTip.swift */; settings = {ATTRIBUTES = (Public, ); }; };
-		27BDAA9A23C30128002177B6 /* EasyTipOption.swift in Headers */ = {isa = PBXBuildFile; fileRef = 27BDAA9323C2F963002177B6 /* EasyTipOption.swift */; settings = {ATTRIBUTES = (Public, ); }; };
 		378A3FDDFA6D099827606A01EC468B0D /* Pods-EasyTip_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 503E280662D7DB554DB20F7ABBE2CB22 /* Pods-EasyTip_Example-dummy.m */; };
 		4FC1FA858FAFF98C6943871CC9FFB050 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
 		586AF265B3EFEB0495C8B2F959193943 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
@@ -237,8 +235,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				A0524ABB977D75A0091179ED9CEE30DD /* EasyTip-umbrella.h in Headers */,
-				27BDAA9923C3011F002177B6 /* EasyTip.swift in Headers */,
-				27BDAA9A23C30128002177B6 /* EasyTipOption.swift in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

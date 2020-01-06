@@ -13,8 +13,8 @@ public typealias EasyTipComplete = (() -> Void)
 
 public struct EasyTip {
     
-    public static func show(in view: UIView?, message: String?, option: EasyTipOption = .default, duration: TimeInterval, complete: EasyTipComplete?) {
-        let v = EasyTipContentView(message: message, option: option, complete: complete)
+    public static func show(in view: UIView?, image: UIImage?, message: String?, option: EasyTipOption = .default, duration: TimeInterval, complete: EasyTipComplete?) {
+        let v = EasyTipContentView(image: image, message: message, option: option, complete: complete)
         if let superView = view {
             superView.addSubview(v)
         } else {

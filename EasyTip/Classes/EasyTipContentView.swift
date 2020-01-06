@@ -16,20 +16,21 @@ public class EasyTipContentView: UIView {
     private var complete: EasyTipComplete?
     private var isDismiss: Bool = false
     
-    public init(message: String?, option: EasyTipOption, complete: EasyTipComplete?) {
+    public init(image: UIImage?, message: String?, option: EasyTipOption, complete: EasyTipComplete?) {
         self.option = option
         self.complete = complete
-        let rect = CGRect(x: 10, y: -kEasyTipContentViewHeight, width: UIScreen.main.bounds.width - 20, height: kEasyTipContentViewHeight)
+        let statusBarHeight = UIApplication.shared.statusBarFrame.height
+        let rect = CGRect(x: 0, y: -kEasyTipContentViewHeight - statusBarHeight, width: UIScreen.main.bounds.width, height: kEasyTipContentViewHeight + statusBarHeight)
         super.init(frame: rect)
         
-        setupUI(size: rect.size, message: message)
+        setupUI(size: rect.size, image: image, message: message)
     }
     
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
     
-    private func setupUI(size: CGSize, message: String?) {
+    private func setupUI(size: CGSize, image: UIImage?, message: String?) {
         backgroundColor = UIColor.clear
         
         // 背景
@@ -42,11 +43,26 @@ public class EasyTipContentView: UIView {
         layer.addSublayer(backgroundLayer)
         
         // 提示文本
-        if let message = message {
-            let tipLabel = UILabel(frame: rect)
-            tipLabel.text = message
-            tipLabel.font = option.textFont
-            tipLabel.textColor = option.textColor
+        if message != nil || image != nil {
+            let statusBarHeight = UIApplication.shared.statusBarFrame.height
+            let tipLabel = UILabel(frame: CGRect(x: 16, y: statusBarHeight, width: rect.width - 32, height: kEasyTipContentViewHeight))
+            if let image = image {
+                let text = "  \(message ?? "")"
+                let attrM = NSMutableAttributedString(string: text)
+                attrM.addAttributes([NSAttributedString.Key.font: option.textFont,
+                                     NSAttributedString.Key.foregroundColor: option.textColor],
+                                    range: NSMakeRange(0, text.count))
+                let textHeight = NSString(string: " ").size(withAttributes: [NSAttributedString.Key.font: option.textFont]).height
+                let imageAttachment = NSTextAttachment()
+                imageAttachment.image = image
+                imageAttachment.bounds = CGRect(origin: CGPoint(x: 0, y: (textHeight - image.size.height) * 0.5 - 2), size: image.size)
+                attrM.insert(NSAttributedString(attachment: imageAttachment), at: 0)
+                tipLabel.attributedText = attrM.copy() as? NSAttributedString
+            } else {
+                tipLabel.text = message
+                tipLabel.font = option.textFont
+                tipLabel.textColor = option.textColor
+            }
             tipLabel.textAlignment = option.textAligment
             addSubview(tipLabel)
         }
@@ -78,7 +94,7 @@ public class EasyTipContentView: UIView {
 extension EasyTipContentView {
     private func show() {
         UIView.animate(withDuration: 0.25) {
-            self.frame.origin.y = UIApplication.shared.statusBarFrame.height
+            self.frame.origin.y = 0
         }
     }
     
@@ -88,7 +104,7 @@ extension EasyTipContentView {
         }
         isDismiss = true
         UIView.animate(withDuration: 0.25, animations: {
-            self.frame.origin.y = -kEasyTipContentViewHeight
+            self.frame.origin.y = -kEasyTipContentViewHeight - UIApplication.shared.statusBarFrame.height
         }) { (_) in
             self.complete?()
             self.removeFromSuperview()

@@ -7,18 +7,17 @@
 //
 
 import UIKit
+import EasyTip
 
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    @IBAction func show(_ sender: Any) {
+        EasyTip.show(in: view, image: #imageLiteral(resourceName: "failure"), message: "Message", duration: 2.0, complete: nil)
     }
-
 }
 
