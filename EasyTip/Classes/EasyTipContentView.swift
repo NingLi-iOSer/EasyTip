@@ -10,13 +10,13 @@ import UIKit
 
 private let kEasyTipContentViewHeight: CGFloat = 56
 
-class EasyTipContentView: UIView {
+public class EasyTipContentView: UIView {
     
     private let option: EasyTipOption
     private var complete: EasyTipComplete?
     private var isDismiss: Bool = false
     
-    init(message: String?, option: EasyTipOption, complete: EasyTipComplete?) {
+    public init(message: String?, option: EasyTipOption, complete: EasyTipComplete?) {
         self.option = option
         self.complete = complete
         let rect = CGRect(x: 10, y: -kEasyTipContentViewHeight, width: UIScreen.main.bounds.width - 20, height: kEasyTipContentViewHeight)
@@ -82,7 +82,7 @@ extension EasyTipContentView {
         }
     }
     
-    func dismiss() {
+    public func dismiss() {
         if isDismiss {
             return
         }

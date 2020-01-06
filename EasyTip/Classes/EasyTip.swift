@@ -9,9 +9,9 @@
 import Foundation
 import UIKit
 
-typealias EasyTipComplete = (() -> Void)
+public typealias EasyTipComplete = (() -> Void)
 
-struct EasyTip {
+public struct EasyTip {
     
     public static func show(in view: UIView?, message: String?, option: EasyTipOption = .default, duration: TimeInterval, complete: EasyTipComplete?) {
         let v = EasyTipContentView(message: message, option: option, complete: complete)
