@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'EasyTip_Example' do
+  pod 'EasyTip', :path => '../'
+
+  target 'EasyTip_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end

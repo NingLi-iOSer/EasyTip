@@ -1,0 +1,16 @@
+PODS:
+  - EasyTip (0.1.0)
+
+DEPENDENCIES:
+  - EasyTip (from `../`)
+
+EXTERNAL SOURCES:
+  EasyTip:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  EasyTip: 717f361741185914a9c00133381bade4a2121bac
+
+PODFILE CHECKSUM: 49fa9995b955e74441f3b7a25a7c4182c81c5d06
+
+COCOAPODS: 1.8.4
