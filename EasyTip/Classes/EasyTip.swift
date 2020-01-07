@@ -43,16 +43,7 @@ public struct EasyTip {
     ///   - duration: show time
     ///   - complete: complete handler
     public static func success(in view: UIView?, message: String?, option: EasyTipOption = .default, duration: TimeInterval = 2.0, complete: EasyTipComplete?) {
-        let bundle = Bundle(for: LoadBundleClass.self)
-        guard let bundleURL = bundle.url(forResource: "EasyTip", withExtension: "bundle"),
-            let targetBundle = Bundle(url: bundleURL)
-            else {
-                return
-        }
-        let imageName = "icon_success"
-        if let image = UIImage(named: imageName, in: targetBundle, compatibleWith: nil) {
-            show(in: view, image: image, message: message, option: option, duration: duration, complete: complete)
-        }
+        showImageTip(in: view, imageName: "icon_success", message: message, complete: complete)
     }
     
     /// Show error tip
@@ -63,13 +54,35 @@ public struct EasyTip {
     ///   - duration: show time
     ///   - complete: complete handler
     public static func error(in view: UIView?, message: String?, option: EasyTipOption = .default, duration: TimeInterval = 2.0, complete: EasyTipComplete?) {
+        showImageTip(in: view, imageName: "icon_failure", message: message, complete: complete)
+    }
+    
+    /// Show status info
+    /// - Parameters:
+    ///   - view: super view
+    ///   - message: tip message
+    ///   - option: option
+    ///   - duration: show time
+    ///   - complete: complete handler
+    public static func showStatusInfo(in view: UIView?, message: String?, option: EasyTipOption = .default, duration: TimeInterval = 2.0, complete: EasyTipComplete?) {
+        showImageTip(in: view, imageName: "icon_info", message: message, complete: complete)
+    }
+    
+    /// Show Image Tip
+    /// - Parameters:
+    ///   - view: super view
+    ///   - imageName: image name
+    ///   - message: tip message
+    ///   - option: option
+    ///   - duration: show time
+    ///   - complete: complete handler
+    private static func showImageTip(in view: UIView?, imageName: String, message: String?, option: EasyTipOption = .default, duration: TimeInterval = 2.0, complete: EasyTipComplete?) {
         let bundle = Bundle(for: LoadBundleClass.self)
         guard let bundleURL = bundle.url(forResource: "EasyTip", withExtension: "bundle"),
             let targetBundle = Bundle(url: bundleURL)
             else {
                 return
         }
-        let imageName = "icon_failure"
         if let image = UIImage(named: imageName, in: targetBundle, compatibleWith: nil) {
             show(in: view, image: image, message: message, option: option, duration: duration, complete: complete)
         }
