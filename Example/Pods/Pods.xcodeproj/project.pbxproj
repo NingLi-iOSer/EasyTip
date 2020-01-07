@@ -49,15 +49,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		03F1272D82838E103A4B7E320AF05128 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
-		05649074465AC2E4633EAF826C7193D2 /* Pods_EasyTip_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_EasyTip_Tests.framework; path = "Pods-EasyTip_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		03F1272D82838E103A4B7E320AF05128 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		05649074465AC2E4633EAF826C7193D2 /* Pods_EasyTip_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EasyTip_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1053BF843B7F64686A70E0AC480BB0A8 /* EasyTip.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = EasyTip.swift; path = EasyTip/Classes/EasyTip.swift; sourceTree = "<group>"; };
 		190FE07C0DB733BB2DF285A0B18198B2 /* EasyTip-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "EasyTip-Info.plist"; sourceTree = "<group>"; };
 		23BEFC91B17CD5A311C03B5873EF69AA /* Pods-EasyTip_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-EasyTip_Tests.modulemap"; sourceTree = "<group>"; };
 		246A2894276BF31BEF409B140E48DFDA /* Pods-EasyTip_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-EasyTip_Example-umbrella.h"; sourceTree = "<group>"; };
 		258610748C84599580DD133E2676899B /* Pods-EasyTip_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-EasyTip_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		26E8EB85C234EC2E2EEC2362D2E39804 /* Pods-EasyTip_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-EasyTip_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
-		2D0F75EE8F5049F72AA51614FCC39089 /* Pods_EasyTip_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_EasyTip_Example.framework; path = "Pods-EasyTip_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2D0F75EE8F5049F72AA51614FCC39089 /* Pods_EasyTip_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EasyTip_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2FFB693ED20B67BA5953F090A12A9624 /* Pods-EasyTip_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-EasyTip_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		312B988EF117AE4DE76A268D970131FE /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		362A640C49D3496A8BB69947E7C44E0D /* Pods-EasyTip_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-EasyTip_Tests-Info.plist"; sourceTree = "<group>"; };
@@ -67,7 +67,7 @@
 		4DECA9023128BC77181B6A1176FC3CCB /* Pods-EasyTip_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-EasyTip_Example-Info.plist"; sourceTree = "<group>"; };
 		503E280662D7DB554DB20F7ABBE2CB22 /* Pods-EasyTip_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-EasyTip_Example-dummy.m"; sourceTree = "<group>"; };
 		510D802D31CDA34F424961098E3BAB05 /* Pods-EasyTip_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-EasyTip_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		5194625BD706C6D1919C28972161EA97 /* EasyTip.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = EasyTip.framework; path = EasyTip.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5194625BD706C6D1919C28972161EA97 /* EasyTip.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = EasyTip.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		52301FA7C97833E32B48A73078A098FD /* Pods-EasyTip_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-EasyTip_Example-frameworks.sh"; sourceTree = "<group>"; };
 		5E48C31A4C496E1137354119CBDBB72A /* EasyTip-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "EasyTip-umbrella.h"; sourceTree = "<group>"; };
 		69A3F5EBA0309053ED7D7540022E6E7F /* ResourceBundle-EasyTip-EasyTip-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-EasyTip-EasyTip-Info.plist"; sourceTree = "<group>"; };
@@ -76,13 +76,13 @@
 		78235FF91D55DF0CCA65B3C78A8ABB84 /* Assets.xcassets */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = EasyTip/Assets/Assets.xcassets; sourceTree = "<group>"; };
 		81DD3354786AF112CBDF88BD7B9BF8C0 /* EasyTip.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = EasyTip.xcconfig; sourceTree = "<group>"; };
 		8B161A9DDA8CA705D05BB7338F7E84C8 /* EasyTip.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = EasyTip.modulemap; sourceTree = "<group>"; };
-		970CE1E6B01E96EA78CCF7B4E3D0EEA6 /* EasyTip.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = EasyTip.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		970CE1E6B01E96EA78CCF7B4E3D0EEA6 /* EasyTip.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = EasyTip.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		A4D969B042BEC7E811D986BB9968A641 /* EasyTip-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "EasyTip-dummy.m"; sourceTree = "<group>"; };
 		B7160C6462C666FCF0E07B1A3D79DAE9 /* EasyTipOption.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = EasyTipOption.swift; path = EasyTip/Classes/EasyTipOption.swift; sourceTree = "<group>"; };
 		B73A6E294482F71E99F78B3B31A45769 /* Pods-EasyTip_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-EasyTip_Example.modulemap"; sourceTree = "<group>"; };
-		DAF7A25B547D1C24FFBE8ABAAF5FDB27 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
-		DCAA1C24D87E84DB4C7A1E17EBF4C264 /* EasyTip.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = EasyTip.bundle; path = "EasyTip-EasyTip.bundle"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DAF7A25B547D1C24FFBE8ABAAF5FDB27 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		DCAA1C24D87E84DB4C7A1E17EBF4C264 /* EasyTip.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EasyTip.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		E650B27F2E3C3655E14C123C9E6E3E38 /* Pods-EasyTip_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-EasyTip_Tests-dummy.m"; sourceTree = "<group>"; };
 		E8F3FC207FC07973BE1DDB0DEC213F00 /* Pods-EasyTip_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-EasyTip_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		E910ACF546BE67BBEB5FC3F7BC7BE0DD /* Pods-EasyTip_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-EasyTip_Tests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -505,6 +505,7 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/EasyTip/EasyTip.modulemap";
 				PRODUCT_MODULE_NAME = EasyTip;
 				PRODUCT_NAME = EasyTip;
@@ -605,8 +606,7 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};
@@ -688,6 +688,7 @@
 				PRODUCT_NAME = EasyTip;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = bundle;
 			};
@@ -778,6 +779,7 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/EasyTip/EasyTip.modulemap";
 				PRODUCT_MODULE_NAME = EasyTip;
 				PRODUCT_NAME = EasyTip;
@@ -837,6 +839,7 @@
 				PRODUCT_NAME = EasyTip;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = bundle;
 			};
