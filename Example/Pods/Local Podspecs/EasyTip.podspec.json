@@ -1,22 +1,33 @@
 {
   "name": "EasyTip",
-  "version": "0.1.0",
-  "summary": "A short description of EasyTip.",
-  "description": "TODO: Add long description of the pod here.",
+  "version": "1.1.4",
+  "summary": "A Easy Tip View.",
+  "description": "EasyTip is a tip view for developer.",
   "homepage": "https://github.com/NingLi-iOSer/EasyTip",
   "license": {
     "type": "MIT",
     "file": "LICENSE"
   },
   "authors": {
-    "NingLi-iOSer": "lining201702@126.com"
+    "NingLi-iOSer": "lining201702@gmail.com"
   },
   "source": {
     "git": "https://github.com/NingLi-iOSer/EasyTip.git",
-    "tag": "0.1.0"
+    "tag": "1.1.4"
   },
   "platforms": {
-    "ios": "8.0"
+    "ios": "9.0"
   },
-  "source_files": "EasyTip/Classes/**/*"
+  "swift_versions": "5.0",
+  "source_files": "EasyTip/Classes/**/*",
+  "resource_bundles": {
+    "EasyTip": [
+      "EasyTip/Assets/*.xcassets"
+    ]
+  },
+  "frameworks": [
+    "UIKit",
+    "Foundation"
+  ],
+  "swift_version": "5.0"
 }

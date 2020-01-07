@@ -17,8 +17,9 @@ class ViewController: UIViewController {
     }
 
     @IBAction func show(_ sender: Any) {
-//        EasyTip.show(in: view, image: #imageLiteral(resourceName: "failure"), message: "Message", duration: 2.0, complete: nil)
-        EasyTip.success(in: view, message: "Success", complete: nil)
+        EasyTip.show(in: view, image: #imageLiteral(resourceName: "failure"), message: "Message", complete: nil)
+//        EasyTip.success(in: view, message: "Success", complete: nil)
+//        EasyTip.error(in: view, message: "Error", duration: 1.5, complete: nil)
     }
 }
 

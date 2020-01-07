@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'EasyTip'
-  s.version          = '1.1.4'
+  s.version          = '1.2'
   s.summary          = 'A Easy Tip View.'
 
   s.description      = <<-DESC
@@ -25,7 +25,7 @@ EasyTip is a tip view for developer.
 
   s.source_files = 'EasyTip/Classes/**/*'
   s.resource_bundles = {
-    'EasyTip' => ['EasyTip/Assets/*.png']
+    'EasyTip' => ['EasyTip/Assets/*.xcassets']
   }
 
   s.frameworks = 'UIKit', 'Foundation'

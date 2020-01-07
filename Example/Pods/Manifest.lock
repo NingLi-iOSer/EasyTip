@@ -1,5 +1,5 @@
 PODS:
-  - EasyTip (0.1.0)
+  - EasyTip (1.1.4)
 
 DEPENDENCIES:
   - EasyTip (from `../`)
@@ -9,7 +9,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  EasyTip: 717f361741185914a9c00133381bade4a2121bac
+  EasyTip: e97fe30d944ea89ad16a7be6c9e0e63085ca5836
 
 PODFILE CHECKSUM: 49fa9995b955e74441f3b7a25a7c4182c81c5d06
 
