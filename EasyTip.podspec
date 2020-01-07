@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'EasyTip'
-  s.version          = '1.1.3'
+  s.version          = '1.1.4'
   s.summary          = 'A Easy Tip View.'
 
   s.description      = <<-DESC
@@ -24,6 +24,10 @@ EasyTip is a tip view for developer.
   s.swift_version = '5.0'
 
   s.source_files = 'EasyTip/Classes/**/*'
+  s.resource_bundles = {
+    'EasyTip' => ['EasyTip/Assets/*.png']
+  }
 
   s.frameworks = 'UIKit', 'Foundation'
+  
 end

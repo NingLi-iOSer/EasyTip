@@ -8,7 +8,7 @@
 
 import UIKit
 
-private let kEasyTipContentViewHeight: CGFloat = 56
+private let kEasyTipContentViewHeight: CGFloat = 44
 
 public class EasyTipContentView: UIView {
     
@@ -34,10 +34,10 @@ public class EasyTipContentView: UIView {
         backgroundColor = UIColor.clear
         
         // 背景
-        let rect = CGRect(origin: CGPoint.zero, size: size)
+        let rect = CGRect(origin: CGPoint.zero, size: CGSize(width: size.width, height: size.height + 10))
         let backgroundLayer = CAShapeLayer()
         backgroundLayer.fillColor = option.backgroundColor.cgColor
-        backgroundLayer.frame = rect
+        backgroundLayer.frame = CGRect(x: 0, y: -10, width: size.width, height: size.height)
         let backgroundPath = UIBezierPath(roundedRect: rect, cornerRadius: 0)
         backgroundLayer.path = backgroundPath.cgPath
         layer.addSublayer(backgroundLayer)
@@ -93,7 +93,7 @@ public class EasyTipContentView: UIView {
 
 extension EasyTipContentView {
     private func show() {
-        UIView.animate(withDuration: 0.8, delay: 0, usingSpringWithDamping: 0.7, initialSpringVelocity: 0.5, options: [], animations: {
+        UIView.animate(withDuration: 0.6, delay: 0, usingSpringWithDamping: 0.7, initialSpringVelocity: 0.5, options: [], animations: {
             self.frame.origin.y = 0
         }, completion: nil)
     }
